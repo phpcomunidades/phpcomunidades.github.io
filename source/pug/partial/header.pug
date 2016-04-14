@@ -1,0 +1,15 @@
+header
+    div#logo
+        img(src="/assets/image/logo.png")
+    nav#navigation-bar
+        ul
+            li
+                a(href="/")
+                    i.fa.fa-code
+                    | {{ 'FIELDS.MAINBAR.SKILLS' | translate }}
+            li
+                a(href="/comunidades")
+                    i.fa.fa-code
+                    | {{ 'FIELDS.MAINBAR.COMMUNITIES' | translate }}
+            li
+                select(ng-options='lang.language for lang in avaliableLanguages track by lang.i18n', ng-model='selectedLanguage', ng-change='changeLanguage()', class="form-control")

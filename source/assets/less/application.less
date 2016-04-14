@@ -1,0 +1,198 @@
+@import 'lesshat';
+@import 'colors';
+@import 'variables';
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    height:100%;
+}
+
+#layout {
+    .border-radius(5px);
+
+    border: 8px solid @color-clouds;
+    width: 85%;
+    margin: 50px auto;
+    padding: 5px;
+    background: rgba(255,255,255, 0.9);
+}
+
+header {
+    #logo {
+        display: block;
+        text-align: center;
+    }
+}
+
+footer {
+    .technologies {
+        ul {
+            list-style: none;
+
+            li {
+                display: inline;
+                margin: 10px;
+            }
+        }
+    }
+    .copyright {
+
+    }
+}
+
+#title {
+    .border-radius(10px);
+
+    border: 3px solid @color-clouds;
+    background: rgba(255,255,255, 0.5);
+    line-height: 50px;
+    padding-left: 10px;
+
+    font-size: 18px;
+    font-family: 'Source Code Pro';
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0rem;
+}
+
+#navigation-bar {
+    .border-radius(10px);
+    .box-shadow(0 4 0 darken(@color-clouds, 10%));
+
+    background: @color-clouds;
+    text-align: center;
+    line-height: 50px;
+
+    ul {
+        li {
+            display: inline-block;
+            margin: auto 10px;
+
+            a {
+                margin: auto 10px;
+                color: @color-wet-asphalt;
+
+                font-size: 18px;
+                font-family: 'Source Code Pro';
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 0rem;
+
+                i {
+                    margin : auto 5px;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#home {
+    #resume {
+        margin-left: 10px;
+        padding-left: 5px;
+        border-left: 4px solid @color-concrete;
+    }
+
+    #skills {
+        padding-top: 10px;
+        font-family: 'Source Code Pro';
+
+        text-decoration: none;
+        letter-spacing: 0rem;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .activity {
+            li {
+                .border-radius(10px);
+
+                display: block;
+                padding: 10px;
+                border: 1px solid #000;
+                font-weight: 800;
+
+                div {
+                    background-color: #ccc;
+                }
+            }
+        }
+        .platform {
+            li {
+                font-weight: normal;
+                margin-left: 10px;
+                border: none;
+                padding: 0;
+            }
+        }
+        .language {
+            li {
+                font-weight: normal;
+                border: none;
+                padding: 0;
+
+            }
+        }
+        .category {
+            li {
+                font-weight: normal;
+                border: none;
+                padding: 0;
+
+            }
+        }
+        .desc {
+            li {
+                font-weight: normal;
+                border: none;
+            }
+        }
+        .stars {
+            background-color: transparent !important;
+            display: inline !important;
+
+            .fa {
+                margin: auto 2px;
+            }
+        }
+    }
+}
+
+#projects {
+    .github-projects {
+        clear: both;
+    }
+
+    li {
+        .border-radius(5px);
+
+        float: left;
+        width: 150px;
+        height: 120px;
+        border: 1px solid #000;
+        display: inline-block;
+
+        margin: 5px;
+        padding: 5px;
+
+        a {
+            color : #000;
+            text-decoration: none;
+        }
+    }
+}

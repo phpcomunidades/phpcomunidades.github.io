@@ -1,0 +1,17 @@
+div#home
+    h2#title {{ 'FIELDS.MAINBAR.SKILLS' | translate }}
+    div#resume {{'RESUME.RESUME' | translate }}
+    div#skills
+        ul.activity
+            li(ng-repeat="(activity, description) in skills")
+                div {{ activity | translate }}
+                ul.platform
+                    li(ng-repeat="(platform, description) in description") {{ platform }}
+                        ul.language
+                            li(ng-repeat="(language, description) in description") {{ language }}
+                                ul.category
+                                    li(ng-repeat="(category, description) in description") {{ category | translate }}
+                                        ul.desc
+                                            li(ng-repeat="desc in description", class="desc") {{ desc.name }} 
+                                                div.stars(ng-repeat="n in [].constructor(desc.level) track by $index")
+                                                        i.fa.fa-star-o

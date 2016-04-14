@@ -1,0 +1,34 @@
+os:
+  - linux
+language: node_js
+node_js:
+  - 5.10.1
+before_install:
+    - sudo apt-get install -y tree
+before_script:
+  - rm target bower node_modules -rf
+  - npm install -g gulp pug jshint bower
+  - npm install
+  - gulp
+script:
+  - tree target
+  - cd target
+  - git init
+  - git config user.name "Travis CI"
+  - git config user.email "fabio@naoimporta.com"
+  - git add -A
+  - git commit -m "Deploy to GitHub Pages"
+  - git push --force "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+notifications:
+  email:
+    - fabio@naoimporta.com
+env:
+  global:
+    - GH_REF: github.com/phpcomunidades/phpcomunidades.git
+    - CXX: g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8

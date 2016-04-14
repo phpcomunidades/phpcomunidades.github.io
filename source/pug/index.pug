@@ -1,0 +1,21 @@
+doctype
+html.no-js(ng-app='application')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title PHP Comunidades - HUB de Comunidades de PHP do Brasil
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel="shortcut icon", href="/assets/image/icon.png")
+        link(rel='stylesheet', href='assets/stylesheet/vendor.min.css')
+        link(rel='stylesheet', href='assets/stylesheet/application.css')
+        link(href='https://fonts.googleapis.com/css?family=Patua+One', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css')
+        base(href='/')
+    body
+        div#layout
+            include partial/header.pug
+            include partial/main.pug
+            include partial/footer.pug
+
+            script(src='assets/javascript/vendor.min.js')
+            script(src='assets/javascript/application.min.js')

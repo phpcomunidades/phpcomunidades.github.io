@@ -1,0 +1,31 @@
+{
+  "name": "phpcomunidades",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "Fábio Luciano",
+  "license": "ISC",
+  "devDependencies": {
+    "bower-files": "latest",
+    "gulp": "latest",
+    "gulp-bower": "latest",
+    "gulp-concat": "latest",
+    "gulp-csslint": "latest",
+    "gulp-imagemin": "latest",
+    "pug": "latest",
+    "gulp-pug": "latest",
+    "gulp-jshint": "latest",
+    "gulp-jsonminify": "latest",
+    "gulp-less": "latest",
+    "gulp-ng-annotate": "latest",
+    "gulp-notify": "latest",
+    "gulp-uglify": "latest",
+    "gulp-watch": "latest",
+    "imagemin-pngquant": "latest",
+    "jshint": "latest",
+    "jshint-stylish": "latest",
+    "less-plugin-clean-css": "latest",
+    "rimraf": "latest",
+    "main-bower-files": "latest"
+  }
+}
