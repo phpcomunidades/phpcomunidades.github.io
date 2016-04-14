@@ -8,10 +8,30 @@
         "url" : "phpsp.org.br",
         "facebook" : "sao.paulo.elephants",
         "twitter" : "phpsp"
-    }
+    },
     "phprs" : {
         "url" : "phprs.com.br",
         "facebook" : "rselephants",
         "twitter" : "phprs"
+    },
+    "phppb" : {
+        "url" : "php-pb.net",
+        "facebook": "176265189091628",
+        "twitter": "phppb"
+    },
+    "phpba" : {
+        "url" : "phpba.com.br",
+        "facebook": "477750069007880",
+        "twitter": "phpba"
+    },
+    "phprio" : {
+        "url" : "phprio.org",
+        "facebook": "310110519090550",
+        "twitter": "phprio"
+    },
+    "phpse" : {
+        "url" : "phpse.net",
+        "facebook": "1381547635396660",
+        "twitter": "phpse"
     }
 }
