@@ -1,0 +1,17 @@
+{
+    "phpdf" : {
+        "url" : "phpdf.org.br",
+        "facebook" : "518644508178778",
+        "twitter" : "phpdf_"
+    },
+    "phpsp" : {
+        "url" : "phpsp.org.br",
+        "facebook" : "sao.paulo.elephants",
+        "twitter" : "phpsp"
+    }
+    "phprs" : {
+        "url" : "phprs.com.br",
+        "facebook" : "rselephants",
+        "twitter" : "phprs"
+    }
+}
